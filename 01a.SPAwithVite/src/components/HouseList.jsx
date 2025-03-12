@@ -6,7 +6,8 @@ const HouseList = () => {
 
   useEffect(() => {
     const fetchHouses = async () => {
-      const response = await fetch("https://localhost:4000/house");
+      const response = await
+        fetch("https://localhost:4000/house");
       const houses = await response.json();      
       setHouses(houses);
     };
