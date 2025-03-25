@@ -3,6 +3,7 @@
 import { postBid } from "@/actions";
 import { useOptimistic } from "react";
 import { use, useActionState } from "react";
+import SubmitButton from "./SubmitButton";
 
 const Bids = ({ house, bidsPromise }) => {
   const fetchedBids = use(bidsPromise);
@@ -70,13 +71,7 @@ const Bids = ({ house, bidsPromise }) => {
           ></input>
         </div>
         <div className="col-2">
-          <button
-            className="btn btn-primary"
-            type="submit"
-            disabled={isPending}
-          >
-            Add
-          </button>
+          <SubmitButton/>
         </div>
       </form>
     </>
