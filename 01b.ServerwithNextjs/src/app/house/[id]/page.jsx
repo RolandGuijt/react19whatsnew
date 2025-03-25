@@ -12,6 +12,10 @@ const House = async ({ params }) => {
 
   return (
     <>
+      <title>{house.address}</title>
+      <meta name="author" content="Roland" />
+      <link rel="author" href="https://x.com/rolandguijt/" />
+      <meta name="keywords" content="cheap beautiful" />
       <div className="row">
         <div className="col-6">
           <div className="row">
